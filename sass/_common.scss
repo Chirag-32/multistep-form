@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:wght@100;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1rem;
+    line-height: 2rem;
+    font-family: $font-lato;
+    font-weight: 400;
+    color: $color-black;
+}
+h1,h2,h3,h4,h5{
+    margin-bottom: 1.5rem;
+    font-family: $font-Fjalla;
+}
+h1,.h1{font-size: 3rem;}
+h2,.h2{font-size: 2.5rem;}
+h3,.h3{font-size: 1.8rem;}
+h4,.h4{font-size: 1rem;}
+a{
+    color: $color-white !important;
+    transition: all 0.3s ease-out;
+    outline: none;
+    display: inline-block;
+}
+a:hover,
+a:focus{
+    color: $color-red;
+    text-decoration: none;
+}
+img{max-width: 100%;}
+.red-btn{
+    background-color: $color-red;
+    border-color: $color-red;
+    :hover{
+        background-color: $color-green;
+        border-color: $color-green;
+    }
+}

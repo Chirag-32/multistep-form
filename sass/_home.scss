@@ -1,0 +1,95 @@
+.social{
+    padding: 0 $side-padding ;
+    background-image: url(..//images/1920759green.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .market-title{
+        padding-top: 64px;
+        p{
+            margin-top: 1.8em;
+        }
+
+        h6{
+            font-family: 'Permanent Marker', cursive !important;
+            color: $color-red !important;
+            font-size: 22px;
+            margin: 0;
+        }
+        h2{
+            margin: 0.4em 0 0 0;
+            color: #1c2334;
+            line-height: 1.2em;
+            font-family: "Fjalla One",sans-serif;
+            font-size: 3.056em;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1.1px;
+        }
+        
+    }
+    
+}
+.social-icon{
+    text-align: left;
+    margin-top: 15px;
+    a{
+        background-color: $color-red;
+        padding: 6px 9px;
+        margin: 0px 15px;
+        display: inline-block;
+    }
+    a:hover{
+        background-color: $color-green;
+    }
+    a:first-child{
+        margin-left: 0;
+    }
+    i{
+        font-size: 27px;
+        color: $color-white;
+    }
+}
+
+.buy-token{
+    padding: 0 $side-padding;
+    margin-top: 1.05em;
+    background-image: url(..//images/1920550_new.jpeg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    .doc-btn {
+        margin-top: 37px;
+        margin-bottom: 128px;
+        a{
+            font-family: $font-Fjalla;
+            color: $color-white;
+            font-size: 0.889em;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 1em;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 1em 2.2em;
+            letter-spacing: 0.85px;
+            border-radius: 0px;
+        }
+    }
+}
+.market-title h1{
+    color: $color-white;
+    margin-top: 48px;
+    margin-bottom: 16px;
+}
+.btn.btn-primary{
+    margin: 20px 0 !important;
+}
+#register_form {
+    fieldset:not(:first-of-type) {
+    display: none;
+  }
+}
+// .d-none{
+//     display: none;
+// }

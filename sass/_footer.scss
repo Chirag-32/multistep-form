@@ -1,0 +1,32 @@
+.footer{
+    background-color: $header-color;
+    color: $color-black;
+}
+.footer-nav{
+    margin: 1.5em 0;
+}
+.footer-nav #nav-menu{
+    list-style-type: none;
+    display:$flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0 ;
+}
+.footer-nav #nav-menu li a{
+    font-family: $font-Fjalla;
+    text-transform: uppercase;
+    padding: 2px 17px 1px;
+    height: 17px;
+    margin: 0 1.5em;
+    color: $color-white;
+    text-decoration: none;
+}
+.footer-nav #nav-menu li a:hover{
+    background-color: $color-green;
+}
+.copyright{
+    background-color: #171e2d !important;
+}
+.copyright p{
+    margin: 2.1em 0;
+}
