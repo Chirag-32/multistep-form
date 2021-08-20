@@ -11,7 +11,7 @@ body {
   line-height: 2rem;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  color: #80838d; }
+  color: #000; }
 
 h1, h2, h3, h4, h5 {
   margin-bottom: 1.5rem;
@@ -63,7 +63,7 @@ header li a {
 
 .footer {
   background-color: #1c2334;
-  color: #80838d; }
+  color: #000; }
 
 .footer-nav {
   margin: 1.5em 0; }
@@ -168,5 +168,11 @@ header li a {
 
 #register_form fieldset:not(:first-of-type) {
   display: none; }
+
+.btn-info {
+  background-color: #17573f !important; }
+
+.btn-default {
+  background-color: #cb1a2b !important; }
 
 /*# sourceMappingURL=main.css.map */
