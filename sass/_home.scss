@@ -93,9 +93,9 @@
 // .d-none{
 //     display: none;
 // }
-.btn.btn-info{
-    background-color: $color-green;
+.btn-info{
+    background-color: $color-green !important;
 }
-.btn.btn-default{
-    background-color: $color-red;
+.btn-default{
+    background-color: $color-red !important;
 }
