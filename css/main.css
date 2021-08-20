@@ -169,10 +169,13 @@ header li a {
 #register_form fieldset:not(:first-of-type) {
   display: none; }
 
-.btn-info {
-  background-color: #17573f !important; }
+.wpcf7-not-valid-tip {
+  color: #cb1a2b; }
 
-.btn-default {
-  background-color: #cb1a2b !important; }
+.btn.btn-info {
+  color: #17573f; }
+
+.btn.btn-default {
+  color: #cb1a2b; }
 
 /*# sourceMappingURL=main.css.map */
