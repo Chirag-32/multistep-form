@@ -93,6 +93,13 @@
 // .d-none{
 //     display: none;
 // }
+
 .wpcf7-not-valid-tip{
+    color: $color-red;
+}
+.btn.btn-info{
+    color: $color-green;
+}
+.btn.btn-default{
     color: $color-red;
 }
