@@ -41,6 +41,9 @@
                     <li class="nav-item">
                     <a class="nav-link" href="multi_form.php">Apply Job</a>
                     </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="counter.php">Js Counter</a>
+                    </li>
                 </ul>
                 </div>
             </div>

@@ -55,7 +55,7 @@ $(document).ready(function(){
         }
     });
     $('#email').focusout(function(){
-        let emailcheck = /^[A-Za-z0-9]{3,}([A-Za-z0-9]{3,}[\w\.\{1}][A-Za-z0-9]{3,})*@[A-Za-z]{3,}[.]{1}[A-Za-z]{2,}([A-Za-z0-9]{2,6}||[.]{1}[A-Za-z0-9]{2,6})$/;
+        let emailcheck = /^[A-Za-z0-9]{3,}([A-Za-z0-9]{2,}[\w\.\{1}][A-Za-z0-9]{2,})*@[A-Za-z]{3,}[.]{1}[A-Za-z]{2,}([A-Za-z0-9]{2,6}||[.]{1}[A-Za-z0-9]{2,6})$/;
         let email = $(this).val();
         $(this).parents('.email').find('.wpcf7-not-valid-tip').remove();
         if(!emailcheck.test(email)){

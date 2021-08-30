@@ -46,20 +46,20 @@
     
 // }
 
-// function phoneno(){ 
-//     jQuery(document).ready(function($){         
-//         $('mobile').keypress(function(e) {
-//             var a = [];
-//             var k = e.which;
+function phoneno(){ 
+    jQuery(document).ready(function($){         
+        $('mobile').keypress(function(e) {
+            var a = [];
+            var k = e.which;
 
-//             for (i = 48; i < 58; i++)
-//                 a.push(i);
+            for (i = 48; i < 58; i++)
+                a.push(i);
 
-//             if (!(a.indexOf(k)>=0))
-//                 e.preventDefault();
-//         });
-//     });
-// }
+            if (!(a.indexOf(k)>=0))
+                e.preventDefault();
+        });
+    });
+}
 
 // $("#submit").click(function(){
 //     jQuery(document).ready(function($){
@@ -172,4 +172,20 @@ $(document).ready(function() {
     
 
 
-   
+
+
+    let count = 0, button1 = document.querySelector(".AddBtn");
+    // console.log(button1);
+        button1.onclick = function() {
+            count += 1;
+            button1.innerHTML = "Add: " + count;
+        };
+    var button2 = document.getElementById("backcounter");
+        count = 0;
+    button2.onclick = function() {
+    count -=1;
+    button2.innerHTML = "Minus:" + count;
+    };
+// var buttonClick = document.querySelector('#AddBtn');
+// console.log(buttonClick);
+// document.getElementById("AddBtn").innerHTML = "Paragraph changed!";
