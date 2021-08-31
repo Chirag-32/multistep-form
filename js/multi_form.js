@@ -44,7 +44,7 @@ $(document).ready(function(){
         let namecheck = /^[A-Za-z]{3,30}([A-Za-z]{2,}|[\s]{1}[A-Za-z]{2,})*$/;
         let fullName = $(this).val();
         
-        $(this).parents('.name, .fstudy, .uni, .job, .jcity, .company').find('.wpcf7-not-valid-tip').remove();
+        $(this).parents('.name, .fstudy, .uni, .job, .jcity, .company, #fname').find('.wpcf7-not-valid-tip').remove();
         if(!namecheck.test(fullName)){
             // $(".wpcf7-not-valid-tip").show();
          $(this).after('<span class="wpcf7-not-valid-tip" aria-hidden="true">Please enter a valid name.</span>');
@@ -98,8 +98,8 @@ $(document).ready(function(){
             $("#send").attr("disabled", false);
         }
     });
-
-    $('.tel-85').keypress(function(e) {
+    
+    $('#mobile').keypress(function(e) {
                     var a = [];
                     var k = e.which;
         

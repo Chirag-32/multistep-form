@@ -92,7 +92,7 @@ $(document).ready(function() {
     //  var websiteurl = $('#websiteurl').val();
      var userpassword = $('#pass').val();
         // Hiding error messages 
-     
+        $(this).parents('form-group').find('.error').remove()
         $('.error').hide();
      if(checkUsername(username) == false){    
            $('#fnameerror').show();    
@@ -111,7 +111,15 @@ $(document).ready(function() {
      }
       
     });
-    });
+    // $('#fname').keyup(function() {
+    //     $('.error').hide();
+    //     var inputVal = $(this).val();
+    //     let namecheck = /^[A-Za-z]{3,30}([A-Za-z]{2,}|[\s]{1}[A-Za-z]{2,})*$/;
+    //     if(!namecheck.test(inputVal)) {
+    //         $(this).after('<span class="wpcf7-not-valid-tip error-keyup-7">Invalid name Format.</span>');
+    //     }
+    // });
+});
     //function used to check valid email
     function checkEmail(email)
     {
@@ -174,8 +182,8 @@ $(document).ready(function() {
 
 
 
-    let count = 0, button1 = document.querySelector(".AddBtn");
-    // console.log(button1);
+    var button1 = document.querySelector("addcounter"),
+      count = 0;
         button1.onclick = function() {
             count += 1;
             button1.innerHTML = "Add: " + count;
