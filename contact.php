@@ -9,28 +9,29 @@
                     <span class="name">
                         <input type="text" name="" value="" id="fname" class="form-control">
                     </span>
-                    <!-- <span id="fnameerror" class="text-danger error">First name is invalid</span> -->
+                    <span id="fnameerror" class="text-danger error">First name is invalid</span>
                 </div>
                 <div class="form-group">
                     <label for=""> Email</label>
                     <span class="email">
                         <input type="text" name="" id="email" class="form-control">
                     </span>
-                    <!-- <span id="emailerror" class="text-danger error">First name is invalid</span> -->
+                    <span id="emailerror" class="text-danger error">First name is invalid</span>
                 </div>
                 <div class="form-group">
                     <label for=""> Mobile No.</label>
                     <span class="name">
-                        <input type="text" name="" id="mobile" class="form-control" onkeypress="phoneno()" maxlength="10">
+                        <input type="text" name="" id="mobile" class="form-control" >
+                        <!-- onkeypress="phoneno()" maxlength="10" -->
                     </span>
-                    <!-- <span id="mobileerror" class="text-danger error">First name is invalid</span> -->
+                    <span id="mobileerror" class="text-danger error">First name is invalid</span>
                 </div>
                 <div class="form-group">
                     <label for=""> Password</label>
                     <span class="pass">
                         <input type="text" name="" id="pass" class="form-control">
                     </span>
-                    <!-- <span id="passerror" class="text-danger error">First name is invalid</span> -->
+                    <span id="passerror" class="text-danger error">First name is invalid</span>
                 </div>
                 <div class="form-group">
                     <label for=""> Confirm Password</label>

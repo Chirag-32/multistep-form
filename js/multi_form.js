@@ -105,8 +105,16 @@ $(document).ready(function(){
         
                     for (i = 48; i < 58; i++)
                         a.push(i);
-        
+                        if($(e.target).prop('value').length>=10){
+                                if(e.keyCode!=32)
+                                {return false} 
+                                }
                     if (!(a.indexOf(k)>=0))
                         e.preventDefault();
                 });
+                // $(document).on('keypress','#mobile',function(e){
+                //     if($(e.target).prop('value').length>=10){
+                //     if(e.keyCode!=32)
+                //     {return false} 
+                //     }})
   });
