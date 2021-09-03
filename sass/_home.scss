@@ -125,9 +125,6 @@ button {
 	font-size: 20pt;
 	font-weight: normal;
 	background: lightblue;
-	background: -webkit-linear-gradient( -90deg, lightblue, black );
-	background: -o-linear-gradient( -90deg, lightblue, black );
-	background: -moz-linear-gradient( -90deg, lightblue, black );
 	background: linear-gradient(-90deg, lightblue, black);
 }
 #fname.error-show{
