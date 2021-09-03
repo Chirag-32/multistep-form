@@ -297,7 +297,7 @@ $(document).ready(function() {
     $( "#submit" ).click(function() {
 
      var username = $('#fname').val();
-     console.log(username)
+    //  console.log(username)
      var emailid = $('#email').val();
      var mobilenumber = $('#mobile').val();
     //  var websiteurl = $('#websiteurl').val();
@@ -306,7 +306,8 @@ $(document).ready(function() {
 
         $('.error').hide();
      if(checkUsername(username) == false){    
-           $('#fnameerror').show();    
+           $('#fnameerror').show(); 
+              $('#fname').addClass("error-show");
            return false;    
      }else if(checkEmail(emailid) == false){    
         $('#emailerror').show(); 
@@ -320,15 +321,25 @@ $(document).ready(function() {
      }else{
       alert("successful")
      }
-
+     
+    });
+    $( "#submit" ).click(function(){
+        if(username ==false){
+            $('#fname').addClass("error-show");
+            return false;
+        }else{
+             $('#fname').removeClass("error-show");
+            
+        }
     });
     });
     //function used to check valid email
-    function checkEmail(email)
+    function checkEmail(emailid)
     {
         //regular expression for email
-        var emailcheck = /^[A-Za-z]{3,}[\w\.\{1}][A-Za-z0-9]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/;
-        if(emailcheck.test(email)){
+        // var emailcheck = /^[A-Za-z]{3,}[\w\.\{1}][A-Za-z0-9]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/;
+        var emailcheck = /^[A-Za-z0-9]{3,}([A-Za-z0-9]{2,}[\w\.\{1}][A-Za-z0-9]{2,})*@[A-Za-z]{3,}[.]{1}[A-Za-z]{2,}([A-Za-z0-9]{2,6}||[.]{1}[A-Za-z0-9]{2,6})$/;
+        if(emailcheck.test(emailid)){
             return true;
         } else {
             return false;
@@ -353,8 +364,10 @@ $(document).ready(function() {
      //regular expression for username
      var namecheck = /^[A-Za-z]{3,30}([A-Za-z]{2,}|[\s]{1}[A-Za-z]{2,})*$/;
         if(namecheck.test(username)){
+            $('#fname').removeClass("error-show");
             return true;
         }else{
+            $('#fname').addClass("error-show");
             return false;
         }
     }
@@ -370,14 +383,43 @@ $(document).ready(function() {
         }
     }
     //function used to validate mobile number
-    function checkMobileNumber(mobile){
-     //regular expression for mobile number
-        var pattern = /^[0-9]{10}$/;
-        if(pattern.test(mobile)){
-            return true;
-        }else{
-            return false;
-        }
-    }
+    // function checkMobileNumber(mobile){
+    //  //regular expression for mobile number
+    //     var pattern = /^[0-9]{10}$/;
+    //     if(pattern.test(mobile)){
+    //         return true;
+    //     }else{
+    //         return false;
+    //     }
+    // }
 
-    
+    // $('#mobile').keypress(function(e) {
+    //     var a = [];
+    //     var k = e.which;
+
+    //     for (i = 48; i < 58; i++)
+    //         a.push(i);
+    //         if($(e.target).prop('value').length>=10){
+    //                 if(e.keyCode!=32)
+    //                 {return false} 
+    //                 }
+    //     if (!(a.indexOf(k)>=0))
+    //         e.preventDefault();
+    // });
+
+    // if(checkMobileNumber(mobilenumber) == false){    
+    //     $('#mobileerror').show();     
+    //     return false;
+
+
+
+
+    $('#fname').keyup(function(){
+        var input = $(this).val();
+        var namereg= /^[A-Za-z]{1,30}([A-Za-z]{2,}|[\s]{1}[A-Za-z]{2,})*$/;
+        if(!namereg.test(input)){
+            $('#fname').addClass("error-show");
+        }else{
+            $('#fname').removeClass("error-show");
+        }
+    });

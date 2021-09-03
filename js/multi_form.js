@@ -46,7 +46,7 @@ $(document).ready(function(){
         
         $(this).parents('.name, .fstudy, .uni, .job, .jcity, .company, #fname').find('.wpcf7-not-valid-tip').remove();
         if(!namecheck.test(fullName)){
-            // $(".wpcf7-not-valid-tip").show();
+            $(".wpcf7-not-valid-tip").show();
          $(this).after('<span class="wpcf7-not-valid-tip" aria-hidden="true">Please enter a valid name.</span>');
          $(".next-form").attr("disabled", true);
         }
@@ -76,10 +76,10 @@ $(document).ready(function(){
             $(".next-form").attr("disabled", false);
         }
     });
-    $('.wpcf7-tel').focusout(function(){
+    $('#mobile').focusout(function(){
         let mobilecheck = /^[3-9][0-9]{9}$/;
         let mobile = $(this).val();
-        $(this).parents('.tel-85').find('.wpcf7-not-valid-tip').remove();
+        $(this).parents('.mobile').find('.wpcf7-not-valid-tip').remove();
         if(!mobilecheck.test(mobile)){
             $(this).after('<span class="wpcf7-not-valid-tip" aria-hidden="true">Please enter a valid mobile no.</span>');
             $("#send").attr("disabled", true);
