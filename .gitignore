@@ -2,3 +2,4 @@ node_modules
 *.json
 main.css.map
 .sass-cache/
+index.js
