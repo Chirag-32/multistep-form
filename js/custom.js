@@ -184,24 +184,6 @@
 
 
 
-//     var button1 = document.querySelector("addcounter"),
-//       count = 0;
-//             count += 1;
-//         button1.onclick = function() {
-//             button1.innerHTML = "Add: " + count;
-//         };
-//     var button2 = document.getElementById("backcounter");
-//         count = 0;
-//     button2.onclick = function() {
-//     count -=1;
-//     button2.innerHTML = "Minus:" + count;
-//     };
-// var buttonClick = document.querySelector('#AddBtn');
-// console.log(buttonClick);
-// document.getElementById("AddBtn").innerHTML = "Paragraph changed!";
-
-
-
 // $(document).ready(function() { 
 //     $('.error').hide();
 //     $( "#submit" ).click(function() {
@@ -423,3 +405,33 @@ $(document).ready(function() {
             $('#fname').removeClass("error-show");
         }
     });
+
+
+
+    $(document).ready(function() {
+        var count = 0;
+    
+        $("#addcounter").click(function() {
+            count += 1;
+            $(this).text("Add: " + count);
+          });
+        
+        $("#backcounter").click(function() {
+            count -= 1;
+            $(this).text("Minus: " + count);
+        });
+    });
+            // var button1 = document.getElementById("addcounter"),
+            //     count = 0;
+            //         count += 1;
+            //     button1.onclick = function() {
+            //         button1.innerHTML = "Add: " + count;
+            //     };
+            // var button2 = document.getElementById("backcounter");
+            //     count = 0;
+            // button2.onclick = function() {
+            // count -=1;
+            // button2.innerHTML = "Minus:" + count;
+            // };
+        
+        
